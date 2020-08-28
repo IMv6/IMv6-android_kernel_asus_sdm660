@@ -3854,10 +3854,15 @@ int dev_err_probe(const struct device *dev, int err, const char *fmt, ...)
 	vaf.va = &args;
 
 	if (err != -EPROBE_DEFER)
-		dev_err(dev, "error %d: %pV", err, &vaf);
+		dev_err(dev, "error %pe: %pV", ERR_PTR(err), &vaf);
 	else
+<<<<<<< HEAD
 		dev_dbg(dev, "error %d: %pV", err, &vaf);
 	
+=======
+		dev_dbg(dev, "error %pe: %pV", ERR_PTR(err), &vaf);
+
+>>>>>>> cf07cb793264 (driver code: print symbolic error code)
 	va_end(args);
 
 	return err;
