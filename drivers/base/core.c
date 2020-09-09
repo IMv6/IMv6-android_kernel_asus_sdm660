@@ -3817,12 +3817,16 @@ define_dev_printk_level(_dev_info, KERN_INFO);
  * This helper implements common pattern present in probe functions for error
  * checking: print debug or error message depending if the error value is
  * -EPROBE_DEFER and propagate error upwards.
+<<<<<<< HEAD
 
  * In case of -EPROBE_DEFER it sets also defer probe reason, which can be
  * checked later by reading devices_deferred debugfs attribute.
  * It replaces code sequence::
  *
  * It replaces code sequence:
+=======
+ * It replaces code sequence::
+>>>>>>> 4d61ff79b439 (drivers: core: fix kernel-doc markup for dev_err_probe())
  * 	if (err != -EPROBE_DEFER)
  * 		dev_err(dev, ...);
  * 	else
@@ -3831,6 +3835,7 @@ define_dev_printk_level(_dev_info, KERN_INFO);
  *
  * with::
  *
+<<<<<<< HEAD
  * 	return dev_err_probe(dev, err, ...);
  *
  * Note that it is deemed acceptable to use this function for error
@@ -3839,6 +3844,8 @@ define_dev_printk_level(_dev_info, KERN_INFO);
  * of the error code and the fact that the error code is returned.
  *
  * with
+=======
+>>>>>>> 4d61ff79b439 (drivers: core: fix kernel-doc markup for dev_err_probe())
  * 	return dev_err_probe(dev, err, ...);
  *
  * Returns @err.
