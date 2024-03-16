@@ -1,15 +1,15 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.19.241 Kernel Configuration
+# Linux/arm64 4.19.310 Kernel Configuration
 #
 
 #
 # General setup
-#
+CONFIG_KSU=n
 CONFIG_INIT_ENV_ARG_LIMIT=32
 # CONFIG_COMPILE_TEST is not set
-CONFIG_LOCALVERSION="-KnightWalker"
-CONFIG_LOCALVERSION_AUTO=y
+CONFIG_LOCALVERSION="♠KiwKiw™♠"
+CONFIG_LOCALVERSION_AUTO=n
 CONFIG_LOCALVERSION_BRANCH_SHA=y
 CONFIG_BUILD_SALT=""
 CONFIG_HAVE_KERNEL_GZIP=y
